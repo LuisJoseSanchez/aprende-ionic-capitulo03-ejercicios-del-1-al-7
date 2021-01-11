@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ejercicio 4</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input clearInput [(ngModel)]="name"></ion-input>
+  </ion-item>
+
+  <ion-button
+    (click)="sayHello()"
+    size="large"
+    expand="full">
+    Saluda
+  </ion-button>
+
+  <h1 text-center>{{ message }}</h1>
+</ion-content>
